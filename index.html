@@ -128,7 +128,7 @@ p{margin:0}
 .role .lisc{margin-top:.48em}
 .role b{font:600 clamp(19px,1.25vw,24px)/1.3 Lora,Georgia,serif;color:var(--td)}
 .role span.o{grid-column:2;color:var(--mut)}
-@media (min-width:1000px){.idea{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}.idea-foto{aspect-ratio:auto;height:100%;min-height:620px;max-height:860px}}
+@media (min-width:1000px){.idea{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start}.idea-foto{aspect-ratio:auto;height:calc(100svh - var(--hh) - 64px);min-height:560px;max-height:860px;position:sticky;top:calc(var(--hh) + 32px)}}
 
 .zcz{margin-top:38px;font-size:clamp(20px,1.3vw,25px)}
 .tagi{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
@@ -433,7 +433,7 @@ p{margin:0}
     <div class="ceny" aria-label="Cennik konsultacji">
       <div><span>Pierwsza konsultacja<small>1,5 godziny, w poradni lub online</small></span><b>240 zł</b></div>
       <div><span>Konsultacja kolejna<small>1 godzina, w poradni lub online</small></span><b>180 zł</b></div>
-      <div><span>Diagnostyka Mezatorem Quantum<small>z konsultacją, 1,5 godziny</small></span><b>250 zł</b></div>
+      <div><span>Analiza składu ciała<small>BMI, WHR, BMR</small></span><b>bezpłatnie</b></div>
     </div>
     <div class="etapy">
       <h3 class="t">Jak przebiega współpraca</h3>
@@ -461,7 +461,7 @@ p{margin:0}
     <div>
       <ul class="cennik">
         <li><b>Diagnostyka Mezatorem Quantum z konsultacją</b><span class="c">250 zł</span><small>Nieinwazyjna analiza w poradni, 1,5 godziny. Po badaniu dostajesz indywidualne zalecenia.</small></li>
-        <li><b>Analiza składu ciała</b><span class="c">w ramach wizyty</span><small>Masa mięśniowa, tkanka tłuszczowa, nawodnienie - punkt wyjścia i kontrola postępów.</small></li>
+        <li><b>Analiza składu ciała</b><span class="c">bezpłatnie</span><small>Masa mięśniowa, tkanka tłuszczowa, nawodnienie - punkt wyjścia i kontrola postępów.</small></li>
         <li><b>Mikrobiota jelitowa i stany zapalne</b><span class="c">na zlecenie</span><small>GutFlora, Zonulina, Candida, Helicobacter - gdy dolegliwości jelitowe wracają mimo diety.</small></li>
         <li><b>Nietolerancje pokarmowe IgG-zależne</b><span class="c">na zlecenie</span><small>Panele FoodTest i FoodPrint.</small></li>
         <li><b>Analiza pierwiastkowa włosa</b><span class="c">na zlecenie</span><small>Pierwiastki i metale toksyczne, z opisem typu metabolicznego.</small></li>
@@ -572,7 +572,7 @@ p{margin:0}
           <h3>Dorota Walaśkiewicz</h3>
           <p class="rola">psycholog</p>
           <p>Psychoterapia, psychologia kryzysu i wsparcie seniorów. Pomaga przy bezsenności, lękach, depresji, stresie pourazowym i dolegliwościach psychosomatycznych. Przyjmuje dorosłych i dzieci, w poradni i online.</p>
-          <a class="btn" href="https://www.znanylekarz.pl/profil/dorota-walaskiewicz" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#kal"/></svg>Umów wizytę u Pani Doroty</a>
+          <a class="btn" href="https://www.znanylekarz.pl/profil/dorota-walaskiewicz" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#kal"/></svg>Kalendarz Pani Doroty</a>
         </div>
       </article>
       <article class="os">

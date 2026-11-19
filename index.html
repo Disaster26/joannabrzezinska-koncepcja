@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>Psychodietetyk i fitoterapeuta Wołomin - Joanna Brzezińska, z uważnością ku zdrowiu</title>
-<meta name="description" content="Joanna Brzezińska - psychodietetyk, zielarz-fitoterapeuta i dietetyk TCM w Wołominie. Konsultacje w poradni i online, badania, terapie ziołowe, Access Bars, moksoterapia, bańki ogniowe. Tel. 501 750 410.">
+<title>Naturopata Wołomin - Joanna Brzezińska, mistrz naturopatii, zielarka i dietetyk TCM</title>
+<meta name="description" content="Joanna Brzezińska - mistrz naturopatii, zielarka i dietetyk TCM w Wołominie. Konsultacje psychodietetyczne w poradni Przestrzeń Dobrostanu i online, jelita, insulinooporność, zioła, masaż Kobido, moksoterapia, bańki. Tel. 501 750 410.">
 <meta name="theme-color" content="#1E8E78">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:899px)" fetchpriority="high">
@@ -130,6 +130,10 @@ p{margin:0}
 .role span.o{grid-column:2;color:var(--mut)}
 @media (min-width:1000px){.idea{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}.idea-foto{aspect-ratio:auto;height:100%;min-height:620px;max-height:860px}}
 
+.zcz{margin-top:38px;font-size:clamp(20px,1.3vw,25px)}
+.tagi{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.tagi li{padding:9px 16px;border:1.5px solid var(--t);border-radius:4px;color:var(--td);font-weight:500;font-size:.95em;line-height:1.3}
+.tagi li:first-child{background:var(--t);color:#fff}
 /* konsultacje */
 .kons{display:grid;gap:clamp(30px,2.6vw,52px)}
 .kart .zd{display:block;width:100%;padding:0;border:0;background:#dfe6e4;overflow:hidden;cursor:zoom-in;aspect-ratio:4/3;border-radius:4px}
@@ -225,6 +229,27 @@ p{margin:0}
 .dyp button:hover img{transform:scale(1.04)}
 @media (min-width:1000px){.om{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}}
 
+.kwal{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--line)}
+.kwal li{padding:11px 0 11px 26px;border-bottom:1px solid var(--line);position:relative;color:var(--mut);line-height:1.45}
+.kwal li::before{content:"";position:absolute;left:0;top:1.05em;width:.62em;height:.62em;background:var(--lim);border-radius:100% 0 100% 0}
+.kwal b{color:var(--td);font-weight:600}
+/* zespol */
+.zes{display:grid;gap:clamp(20px,2vw,36px)}
+.os{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;background:#fff;border-radius:4px;padding:clamp(22px,2.6vw,44px);border-top:3px solid var(--t)}
+.mono{width:clamp(58px,4.6vw,84px);height:clamp(58px,4.6vw,84px);display:flex;align-items:center;justify-content:center;border:2px solid var(--t);border-radius:50% 50% 50% 6px;font:600 clamp(28px,2.2vw,40px)/1 Lora,Georgia,serif;color:var(--td)}
+.os .rola{margin-top:6px;color:var(--t);font-weight:500}
+.os p:not(.rola){margin-top:12px;color:var(--mut);max-width:40em}
+.os .btn{margin-top:22px}
+@media (max-width:520px){.os{grid-template-columns:1fr}.os .btn{width:100%}}
+@media (min-width:900px){.zes{grid-template-columns:1fr 1fr}}
+/* blog */
+.wpisy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,2.4vw,48px)}
+.wpisy .wz{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:#dfe6e4}
+.wpisy img{width:100%;height:100%;object-fit:cover}
+.wpisy h3{margin-top:20px}
+.wpisy p{margin-top:8px;color:var(--mut)}
+.uw2{margin-top:clamp(26px,2.4vw,40px);color:var(--mut);font-size:.92em}
+@media (max-width:899px){.wpisy{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -16px;padding:0 16px 6px;scroll-padding:0 16px;scrollbar-width:none}.wpisy::-webkit-scrollbar{display:none}.wpisy>li{flex:0 0 78%;scroll-snap-align:start}}
 /* faq */
 .faq-g{display:grid;gap:clamp(30px,4vw,100px)}
 .faq{border-top:1px solid var(--line)}
@@ -326,9 +351,10 @@ p{margin:0}
     <nav class="menu" id="menu" aria-label="Menu główne">
       <a href="#podejscie">Podejście</a>
       <a href="#konsultacje">Konsultacje</a>
-      <a href="#badania">Badania</a>
       <a href="#terapie">Terapie</a>
       <a href="#o-mnie">O mnie</a>
+      <a href="#zespol">Zespół</a>
+      <a href="#blog">Blog</a>
       <a href="#kontakt">Kontakt</a>
       <a class="tel" href="tel:+48501750410"><svg aria-hidden="true"><use href="#tel"/></svg>501 750 410</a>
       <a class="btn" href="#konsultacje">Umów wizytę</a>
@@ -348,8 +374,8 @@ p{margin:0}
   <svg class="linia linia-h" viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 124C130 118 260 130 380 118c60-6 100-14 150-2C500 96 470 66 492 48c18-14 38-4 44 14 6-18 26-28 44-14 22 18-8 48-50 68 70 10 150 22 240 18 70-3 120-14 160-20"/></svg>
   <div class="hero-tekst">
     <div>
-      <h1 id="h1">Psychodietetyk i fitoterapeuta w&nbsp;Wołominie&nbsp;- z&nbsp;uważnością ku&nbsp;zdrowiu</h1>
-      <p class="lead">Dieta, zioła i praca z nawykami, które zostają na dłużej. Konsultacje w poradni w Wołominie i online, badania oraz naturalne terapie.</p>
+      <h1 id="h1">Naturopata w&nbsp;Wołominie&nbsp;- z&nbsp;uważnością ku&nbsp;zdrowiu</h1>
+      <p class="lead">Pomagam kobietom ułożyć jedzenie, wyciszyć stres i wrócić do równowagi - z ziołami, spokojną rozmową i terapiami, które dają chwilę dla siebie. W poradni Przestrzeń Dobrostanu w Wołominie i online.</p>
       <div class="akcje">
         <a class="btn" href="#konsultacje">Umów konsultację <svg aria-hidden="true"><use href="#str"/></svg></a>
         <a class="ztel" href="tel:+48501750410"><svg aria-hidden="true"><use href="#tel"/></svg>501 750 410</a>
@@ -362,13 +388,23 @@ p{margin:0}
   <div class="wrap idea">
     <button class="idea-foto" type="button" data-lb="img/lawenda-960.webp" aria-label="Powiększ zdjęcie: lawenda w dłoniach"><img src="img/lawenda-600.webp" srcset="img/lawenda-600.webp 600w, img/lawenda-960.webp 960w" sizes="(max-width:999px) 92vw, 36vw" width="960" height="1200" loading="lazy" alt="Kobieta w białej sukience trzyma bukiet lawendy na lawendowym polu"></button>
     <div>
-      <h2 id="h-pod">Talerz, emocje i zioła - połączone jedną linią</h2>
+      <h2 id="h-pod">Najpierw zaufanie, potem zmiana</h2>
       <blockquote>Nie chodzi tylko o to, co jesz, ale także o to, jakie emocje i przekonania są związane z Twoimi wyborami żywieniowymi.</blockquote>
-      <p class="wst">Pracuję z całym człowiekiem, nie z samym jadłospisem. Łączę psychodietetykę, dietetykę funkcjonalną, zasady Tradycyjnej Medycyny Chińskiej i polskie zielarstwo, żeby spojrzeć na zdrowie kompleksowo - bez presji, rygoru i oceniania.</p>
+      <p class="wst">Przychodzą do mnie najczęściej kobiety zmęczone i zestresowane, które nie potrafią poukładać sobie jedzenia. Dlatego konsultację prowadzę w duchu psychodietetycznym: bez presji, rygoru i oceniania, we własnym tempie. Patrzę na zdrowie całościowo - łączę naturopatię i zielarstwo z dietetyką klasyczną i dietetyką Tradycyjnej Medycyny Chińskiej, bo w mojej głowie te elementy od dawna tworzą jedną całość.</p>
       <ul class="role">
-        <li><span class="lisc"></span><b>Psychodietetyk</b><span class="o">Szukamy głębszych przyczyn nawyków żywieniowych i krok po kroku zmieniamy je na takie, które służą ciału i głowie.</span></li>
-        <li><span class="lisc"></span><b>Zielarz - fitoterapeuta</b><span class="o">Indywidualnie dobrane kuracje ziołowe, które wspierają odporność i naturalne procesy organizmu.</span></li>
-        <li><span class="lisc"></span><b>Dietetyk TCM</b><span class="o">Odżywianie według zasad Tradycyjnej Medycyny Chińskiej, dopasowane do Twojego organizmu i stylu życia.</span></li>
+        <li><span class="lisc"></span><b>Naturopatia</b><span class="o">Mam tytuł mistrza naturopatii. Szukam przyczyn dolegliwości i wspieram naturalne procesy organizmu, zamiast gasić same objawy.</span></li>
+        <li><span class="lisc"></span><b>Zielarstwo i fitoterapia</b><span class="o">Indywidualnie dobrane kuracje ziołowe. W sezonie sama zbieram i suszę zioła - w poradni parzę z nich herbatki.</span></li>
+        <li><span class="lisc"></span><b>Dietetyka TCM i klasyczna</b><span class="o">Odżywianie dopasowane do Twojego organizmu i stylu życia, oparte na wiedzy i badaniach.</span></li>
+        <li><span class="lisc"></span><b>Konsultacje psychodietetyczne</b><span class="o">Praca z nawykami i emocjami wokół jedzenia - krok po kroku, tak żeby zmiana została na dłużej.</span></li>
+      </ul>
+      <h3 class="zcz">Z czym przychodzą do mnie kobiety</h3>
+      <ul class="tagi">
+        <li>problemy z jelitami, zespół jelita drażliwego</li>
+        <li>insulinooporność</li>
+        <li>zmęczenie i przewlekły stres</li>
+        <li>jedzenie emocjonalne</li>
+        <li>trudność z ułożeniem diety</li>
+        <li>tarczyca</li>
       </ul>
     </div>
   </div>
@@ -378,13 +414,13 @@ p{margin:0}
   <div class="wrap">
     <div class="naglowek">
       <h2 id="h-kons">Konsultacje dietetyczne i psychodietetyczne</h2>
-      <p>Insulinooporność, tarczyca, problemy trawienne, jedzenie emocjonalne, brak energii albo kilogramy, które wracają. Każda konsultacja to szczegółowy wywiad medyczno-żywieniowy, szczera rozmowa i wskazanie potrzebnych badań.</p>
+      <p>Jelita, insulinooporność, tarczyca, jedzenie emocjonalne, brak energii albo kilogramy, które wracają. Każda konsultacja to szczegółowy wywiad, spokojna rozmowa i plan, który da się wprowadzić w codzienne życie.</p>
     </div>
     <div class="kons">
       <article class="kart">
         <button class="zd" type="button" data-lb="img/stacjonarne-900.webp" aria-label="Powiększ zdjęcie: konsultacja w poradni"><img src="img/stacjonarne-600.webp" srcset="img/stacjonarne-600.webp 600w, img/stacjonarne-900.webp 900w" sizes="(max-width:759px) 92vw, 45vw" width="900" height="675" loading="lazy" alt="Dietetyczka rozmawia z pacjentką przy stole z warzywami"></button>
         <h3>W poradni w Wołominie</h3>
-        <p>Spotkanie na żywo w spokojnej atmosferze, z analizą masy i składu ciała. Poradnia TerKin, os. Słoneczna 4, kilka minut od stacji PKP Wołomin Słoneczna.</p>
+        <p>Spotkanie na żywo w spokojnej atmosferze, przy ziołowej herbacie, z analizą masy i składu ciała. Poradnia Przestrzeń Dobrostanu, os. Słoneczna 4, kilka minut od stacji PKP Wołomin Słoneczna.</p>
         <a class="btn" href="https://booksy.com/pl-pl/280791_joanna-brzezinska-psychodietetyk_zdrowie_4277_wolomin" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#kal"/></svg>Umów przez Booksy</a>
       </article>
       <article class="kart">
@@ -395,9 +431,9 @@ p{margin:0}
       </article>
     </div>
     <div class="ceny" aria-label="Cennik konsultacji">
-      <div><span>Pierwsza konsultacja<small>1-1,5 godziny</small></span><b>240 zł</b></div>
-      <div><span>Wizyta kontrolna<small>60 minut</small></span><b>150 zł</b></div>
-      <div><span>Analiza składu ciała<small>BMI, WHR, BMR</small></span><b>bezpłatnie</b></div>
+      <div><span>Pierwsza konsultacja<small>1,5 godziny, w poradni lub online</small></span><b>240 zł</b></div>
+      <div><span>Konsultacja kolejna<small>1 godzina, w poradni lub online</small></span><b>180 zł</b></div>
+      <div><span>Diagnostyka Mezatorem Quantum<small>z konsultacją, 1,5 godziny</small></span><b>250 zł</b></div>
     </div>
     <div class="etapy">
       <h3 class="t">Jak przebiega współpraca</h3>
@@ -417,23 +453,21 @@ p{margin:0}
 <section class="sek bad" id="badania" aria-labelledby="h-bad">
   <div class="wrap bad-g">
     <div>
-      <h2 id="h-bad">Badania, które pokazują przyczynę</h2>
-      <p class="wst">Wciąż czujesz zmęczenie albo od lat próbujesz schudnąć? Kluczem jest poznanie przyczyn, dlatego stawiam na rzetelną diagnostykę. Na podstawie wyników przygotowuję plan żywienia i dobór suplementacji.</p>
+      <h2 id="h-bad">Diagnostyka, gdy naprawdę jest potrzebna</h2>
+      <p class="wst">Nie zlecam badań na zapas. Najpierw rozmawiamy, a jeśli trzeba poznać przyczynę zmęczenia, problemów z jelitami czy wagi, dobieram badanie do Twojej sytuacji. Na podstawie wyników przygotowuję plan żywienia, zioła i suplementację.</p>
       <svg class="linia" viewBox="0 0 420 40" aria-hidden="true"><path d="M2 26C70 22 120 30 170 22c34-6 50-18 64-18 14 0 16 14 4 22-12 8-26 0-20-10 10-14 50-12 90-6 40 6 70 12 110 8"/></svg>
       <button class="bad-foto" type="button" data-lb="img/talerz-1000.webp" aria-label="Powiększ zdjęcie: warzywa, owoce i nasiona"><img src="img/talerz-600.webp" srcset="img/talerz-600.webp 600w, img/talerz-1000.webp 1000w" sizes="(max-width:999px) 92vw, 40vw" width="1000" height="667" loading="lazy" alt="Kolorowe warzywa, owoce, orzechy i nasiona na drewnianym stole"></button>
     </div>
     <div>
       <ul class="cennik">
-        <li><b>Analiza pierwiastkowa włosa</b><span class="c">390 zł</span><small>29 pierwiastków, w tym 5 toksycznych. Wynik z opisem typu metabolicznego, programem suplementacji i dietą metaboliczną.</small></li>
-        <li><b>Nietolerancje pokarmowe IgG-zależne</b><span class="c">od 495 zł</span><small>Panele FoodTest 40 oraz FoodPrint 80+, 120+, 160+ wegetariański i 220+.</small></li>
-        <li><b>Mikrobiota jelitowa i stany zapalne</b><span class="c">od 255 zł</span><small>GutFlora, Zonulina, Candida, Helicobacter Complex.</small></li>
-        <li><b>Badanie na pasożyty</b><span class="c">od 250 zł</span><small>Parazyt i Parazyt Complex - dla dzieci i dorosłych.</small></li>
-        <li><b>Neuroprzekaźniki i hormony stresu</b><span class="c">od 990 zł</span><small>AdrenalPrint, StressPrint.</small></li>
-        <li><b>Badania genetyczne</b><span class="c">od 2 259 zł</span><small>Wellness, Sport, Fertility.</small></li>
-        <li><b>Witamina D</b><span class="c">110 zł</span></li>
-        <li><b>Diagnostyka Mezatorem Quantum</b><span class="c">w poradni</span><small>Nieinwazyjna analiza, po której dostajesz indywidualne zalecenia.</small></li>
+        <li><b>Diagnostyka Mezatorem Quantum z konsultacją</b><span class="c">250 zł</span><small>Nieinwazyjna analiza w poradni, 1,5 godziny. Po badaniu dostajesz indywidualne zalecenia.</small></li>
+        <li><b>Analiza składu ciała</b><span class="c">w ramach wizyty</span><small>Masa mięśniowa, tkanka tłuszczowa, nawodnienie - punkt wyjścia i kontrola postępów.</small></li>
+        <li><b>Mikrobiota jelitowa i stany zapalne</b><span class="c">na zlecenie</span><small>GutFlora, Zonulina, Candida, Helicobacter - gdy dolegliwości jelitowe wracają mimo diety.</small></li>
+        <li><b>Nietolerancje pokarmowe IgG-zależne</b><span class="c">na zlecenie</span><small>Panele FoodTest i FoodPrint.</small></li>
+        <li><b>Analiza pierwiastkowa włosa</b><span class="c">na zlecenie</span><small>Pierwiastki i metale toksyczne, z opisem typu metabolicznego.</small></li>
+        <li><b>Badanie na pasożyty, hormony stresu, witamina D</b><span class="c">na zlecenie</span><small>Dobierane indywidualnie, po rozmowie.</small></li>
       </ul>
-      <p class="uw">Pełny cennik i opis każdego badania będą na osobnych podstronach.</p>
+      <p class="uw">Aktualny koszt badań laboratoryjnych podaję przy zleceniu - ceny laboratoriów często się zmieniają.</p>
     </div>
   </div>
 </section>
@@ -441,8 +475,8 @@ p{margin:0}
 <section class="sek sek-g" id="terapie" aria-labelledby="h-ter">
   <div class="wrap">
     <div class="naglowek">
-      <h2 id="h-ter">Naturalne terapie w poradni</h2>
-      <p>Spokojne sesje, które pomagają rozluźnić ciało, wyciszyć układ nerwowy i wrócić do równowagi. Można je łączyć z konsultacjami.</p>
+      <h2 id="h-ter">Chwila dla siebie - terapie w poradni</h2>
+      <p>Kobietom, które pracują ze mną nad dietą, najczęściej brakuje spowolnienia i rozluźnienia. Dlatego terapie uzupełniają konsultacje - pomagają odpocząć, wyciszyć układ nerwowy i poczuć się zaopiekowaną. Można przyjść także tylko na terapię.</p>
     </div>
     <div class="ter-pas">
       <ul class="ter" id="ter">
@@ -451,12 +485,11 @@ p{margin:0}
             <div class="gal-tor">
               <button type="button" data-lb="img/bars1-900.webp" aria-label="Powiększ zdjęcie: sesja Access Bars 1"><img src="img/bars1-600.webp" srcset="img/bars1-600.webp 600w, img/bars1-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Sesja Access Bars - delikatny dotyk punktów na głowie"></button>
               <button type="button" data-lb="img/bars2-900.webp" aria-label="Powiększ zdjęcie: sesja Access Bars 2"><img src="img/bars2-600.webp" srcset="img/bars2-600.webp 600w, img/bars2-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Odprężona kobieta podczas sesji Access Bars"></button>
-              <button type="button" data-lb="img/bars3-900.webp" aria-label="Powiększ zdjęcie: sesja Access Bars 3"><img src="img/bars3-600.webp" srcset="img/bars3-600.webp 600w, img/bars3-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Relaks podczas sesji w ciepłym świetle"></button>
               <button type="button" data-lb="img/bars4-900.webp" aria-label="Powiększ zdjęcie: sesja Access Bars 4"><img src="img/bars4-600.webp" srcset="img/bars4-600.webp 600w, img/bars4-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Spokojne morze o wschodzie słońca"></button>
             </div>
             <button class="st p" type="button" aria-label="Poprzednie zdjęcie"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button>
             <button class="st n" type="button" aria-label="Następne zdjęcie"><svg><use href="#str"/></svg></button>
-            <span class="licz">1 / 4</span>
+            <span class="licz">1 / 3</span>
           </div>
           <h3>Access Bars <span class="c">250 zł</span></h3>
           <p class="czas">sesja 1,5 godziny</p>
@@ -464,20 +497,32 @@ p{margin:0}
         </li>
         <li>
           <div class="gal"><div class="gal-tor"><button type="button" data-lb="img/moksa-900.webp" aria-label="Powiększ zdjęcie: moksoterapia"><img src="img/moksa-600.webp" srcset="img/moksa-600.webp 600w, img/moksa-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Moksoterapia - tlące się moksy z bylicy nad plecami"></button></div></div>
-          <h3>Moksoterapia <span class="c">100 zł</span></h3>
-          <p class="czas">30 minut</p>
-          <p>Metoda Tradycyjnej Medycyny Chińskiej: ogrzewanie wybranych punktów ciała tlącą się bylicą. Rozluźnia napięcia, wzmacnia organizm i głęboko relaksuje.</p>
+          <h3>Moksoterapia <span class="c">150 zł</span></h3>
+          <p class="czas">55 minut</p>
+          <p>Metoda Tradycyjnej Medycyny Chińskiej: ogrzewanie wybranych punktów ciała tlącą się bylicą. Rozluźnia napięcia, rozgrzewa i głęboko relaksuje.</p>
         </li>
         <li>
-          <div class="gal"><div class="gal-tor"><button type="button" data-lb="img/banki-900.webp" aria-label="Powiększ ilustrację: bańki ogniowe"><img src="img/banki-600.webp" srcset="img/banki-600.webp 600w, img/banki-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Ilustracja: dłoń z płomieniem przy szklanych bańkach"></button></div></div>
-          <h3>Bańki ogniowe i masaż <span class="c">220 zł</span></h3>
-          <p class="czas">sesja z masażem</p>
-          <p>Jedna z najstarszych metod TCM: pobudza krążenie, rozprasza zastoje i wspiera odporność. W połączeniu z masażem rozluźnia i przywraca równowagę.</p>
+          <div class="gal"><div class="gal-tor"><button type="button" data-lb="img/banki-900.webp" aria-label="Powiększ zdjęcie: bańki"><img src="img/banki-600.webp" srcset="img/banki-600.webp 600w, img/banki-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Ilustracja: dłoń z płomieniem przy szklanych bańkach"></button></div></div>
+          <h3>Bańki <span class="c">od 150 zł</span></h3>
+          <p class="czas">bańka ogniowa 45 minut - 150 zł, masaż pleców bańką szklaną 1,5 godziny - 220 zł</p>
+          <p>Jedna z najstarszych metod TCM: pobudza krążenie i rozprasza zastoje. Masaż bańką szklaną rozluźnia spięte plecy i przywraca lekkość.</p>
+        </li>
+        <li>
+          <div class="gal"><div class="gal-tor"><button type="button" data-lb="img/bars3-900.webp" aria-label="Powiększ zdjęcie: masaż twarzy Kobido"><img src="img/bars3-600.webp" srcset="img/bars3-600.webp 600w, img/bars3-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Masaż twarzy - dłonie terapeutki na czole i skroniach"></button></div></div>
+          <h3>Masaż Kobido <span class="c">250 zł</span></h3>
+          <p class="czas">1,5 godziny, z elementami chińskich technik masażu</p>
+          <p>Japoński masaż twarzy połączony z technikami chińskiego masażu. Rozluźnia napięte mięśnie twarzy, poprawia ukrwienie i koloryt skóry, a przy okazji wycisza głowę.</p>
+        </li>
+        <li>
+          <div class="gal"><div class="gal-tor"><button type="button" data-lb="img/relaks-900.webp" aria-label="Powiększ zdjęcie: masaż relaksacyjny"><img src="img/relaks-600.webp" srcset="img/relaks-600.webp 600w, img/relaks-900.webp 900w" sizes="(max-width:699px) 84vw, (max-width:1023px) 46vw, 30vw" width="900" height="675" loading="lazy" alt="Kobieta z zamkniętymi oczami, odprężona"></button></div></div>
+          <h3>Masaż relaksacyjny całego ciała <span class="c">250 zł</span></h3>
+          <p class="czas">1,5 godziny, z aromaterapią</p>
+          <p>Spokojny masaż całego ciała z olejkami eterycznymi. Dla kobiet, które potrzebują po prostu zatrzymać się, odetchnąć i odpocząć od codziennego biegu.</p>
         </li>
       </ul>
     </div>
     <div class="pas-nav" aria-hidden="true">
-      <span class="licz" id="tlicz">1 / 3</span>
+      <span class="licz" id="tlicz">1 / 5</span>
       <span class="str"><button type="button" id="tp" tabindex="-1" aria-label="Poprzednia terapia"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button><button type="button" id="tn" tabindex="-1" aria-label="Następna terapia"><svg><use href="#str"/></svg></button></span>
     </div>
   </div>
@@ -491,9 +536,18 @@ p{margin:0}
     </div>
     <div>
       <h2 id="h-om">Joanna Brzezińska</h2>
-      <p class="wst">Jestem psychodietetyczką, zielarką - fitoterapeutką i dietetyczką TCM. Na początku tylko dla siebie odkryłam, jak wielki wpływ na nasze życie, samopoczucie i zdrowie ma to, co jemy - i że zdrowe karmienie ciała karmi też duszę.</p>
-      <p class="wst">Ważnym odkryciem było dla mnie ziołolecznictwo, a psychodietetyka dała mi narzędzia do pracy z nawykami i emocjami. Współpraca ze mną to nie tylko spotkania w gabinecie, ale wsparcie na każdym etapie zmiany.</p>
-      <h3>Kwalifikacje i szkolenia</h3>
+      <p class="wst">Z natury jestem raczej opiekunką niż ekspertką zza biurka - choć bez solidnej wiedzy nie da się robić tego, co robię. Najpierw tylko dla siebie odkryłam, jak wielki wpływ na samopoczucie i zdrowie ma to, co jemy, a potem przyszły zioła, naturopatia i praca z emocjami.</p>
+      <p class="wst">To, co polecam, sprawdzam najpierw na sobie. Codziennie praktykuję jogę, kocham być w naturze, a wiosną i latem zbieram i przetwarzam zioła - na własny użytek i na herbatki, którymi częstuję kobiety w poradni. Rozumiem, jak trudno zmienić nawyki w zabieganym życiu, dlatego wspieram na każdym etapie tej zmiany.</p>
+      <ul class="kwal">
+        <li><b>Mistrz naturopatii</b></li>
+        <li><b>Psychodietetyka</b> - studia podyplomowe, Uniwersytet SWPS</li>
+        <li><b>Dietetyka</b> - Akademia Dietetyki</li>
+        <li><b>Zielarstwo i fitoterapia</b></li>
+        <li><b>Dietetyka Tradycyjnej Medycyny Chińskiej</b></li>
+        <li><b>Studium Dialogu Motywującego</b></li>
+        <li><b>Kursy terapii</b> - moksoterapia, bańki ogniowe, masaż Kobido z elementami chińskiego masażu twarzy, Access Bars</li>
+      </ul>
+      <h3>Dyplomy i certyfikaty</h3>
       <div class="dyp">
         <button type="button" data-lb="img/dyp-swps-1100.webp" aria-label="Powiększ: świadectwo studiów podyplomowych z psychodietetyki"><img src="img/dyp-swps-360.webp" width="360" height="504" loading="lazy" alt="Świadectwo ukończenia studiów podyplomowych Psychodietetyka, Uniwersytet SWPS"></button>
         <button type="button" data-lb="img/dyp-tcm-1100.webp" aria-label="Powiększ: dyplom dietetyki TCM"><img src="img/dyp-tcm-360.webp" width="360" height="504" loading="lazy" alt="Dyplom - dietetyka Tradycyjnej Medycyny Chińskiej"></button>
@@ -502,6 +556,50 @@ p{margin:0}
         <button type="button" data-lb="img/dyp-ziel2-1100.webp" aria-label="Powiększ: certyfikat z zielarstwa"><img src="img/dyp-ziel2-360.webp" width="360" height="504" loading="lazy" alt="Certyfikat - kurs zielarski"></button>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="sek sek-g" id="zespol" aria-labelledby="h-zes">
+  <div class="wrap">
+    <div class="naglowek">
+      <h2 id="h-zes">Przestrzeń Dobrostanu - pracujemy zespołowo</h2>
+      <p>W poradni na os. Słonecznej 4 pracuję razem z psychologiem i terapeutką. Nie uważam, że wiem wszystko - tematami, w których nie jestem kompetentna, się nie zajmuję, tylko kieruję do koleżanek. Do nich możesz umówić się także stąd.</p>
+    </div>
+    <div class="zes">
+      <article class="os">
+        <span class="mono" aria-hidden="true">D</span>
+        <div>
+          <h3>Dorota Walaśkiewicz</h3>
+          <p class="rola">psycholog</p>
+          <p>Psychoterapia, psychologia kryzysu i wsparcie seniorów. Pomaga przy bezsenności, lękach, depresji, stresie pourazowym i dolegliwościach psychosomatycznych. Przyjmuje dorosłych i dzieci, w poradni i online.</p>
+          <a class="btn" href="https://www.znanylekarz.pl/profil/dorota-walaskiewicz" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#kal"/></svg>Umów wizytę u Pani Doroty</a>
+        </div>
+      </article>
+      <article class="os">
+        <span class="mono" aria-hidden="true">A</span>
+        <div>
+          <h3>Anna</h3>
+          <p class="rola">terapia czaszkowo-krzyżowa</p>
+          <p>Delikatna terapia manualna, która pomaga rozluźnić napięcia w ciele i wyciszyć układ nerwowy. Pełny opis, zdjęcie i link do zapisów uzupełnię, gdy dostanę materiały.</p>
+          <a class="btn obr" href="#kontakt">Zapytaj o termin</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="blog" aria-labelledby="h-blog">
+  <div class="wrap">
+    <div class="naglowek">
+      <h2 id="h-blog">Blog - o jedzeniu, ziołach i równowadze</h2>
+      <p>Krótkie, praktyczne wpisy o tym, z czym najczęściej przychodzą do mnie kobiety. Pomagają też nowym osobom z okolic Wołomina trafić na stronę z Google.</p>
+    </div>
+    <ul class="wpisy">
+      <li><span class="wz"><img src="img/blog-jelita-600.webp" srcset="img/blog-jelita-600.webp 600w, img/blog-jelita-900.webp 900w" sizes="(max-width:699px) 84vw, 30vw" width="900" height="675" loading="lazy" alt="Świeża bazylia i zioła w doniczkach"></span><h3>Jelito drażliwe - od czego zacząć zmianę jadłospisu</h3><p>Trzy pierwsze kroki, które możesz zrobić jeszcze przed wizytą.</p></li>
+      <li><span class="wz"><img src="img/blog-io-600.webp" srcset="img/blog-io-600.webp 600w, img/blog-io-900.webp 900w" sizes="(max-width:699px) 84vw, 30vw" width="900" height="675" loading="lazy" alt="Gałązki tymianku, cytryna i woda z cytryną"></span><h3>Insulinooporność i stres - dlaczego sama dieta nie wystarcza</h3><p>Jak napięcie i sen wpływają na poziom cukru i apetyt.</p></li>
+      <li><span class="wz"><img src="img/blog-herbatki-600.webp" srcset="img/blog-herbatki-600.webp 600w, img/blog-herbatki-900.webp 900w" sizes="(max-width:699px) 84vw, 30vw" width="900" height="675" loading="lazy" alt="Ziołowa herbata, imbir i przyprawy na łyżeczkach"></span><h3>Herbatki z własnych zbiorów - co parzę w poradni</h3><p>Zioła na jesienne wieczory, trawienie i spokojny sen.</p></li>
+    </ul>
+    <p class="uw2">Przykładowe tematy - pierwsze wpisy przygotujemy razem ze stroną, a kolejne będą dochodzić regularnie.</p>
   </div>
 </section>
 
@@ -528,7 +626,7 @@ p{margin:0}
       <div class="dane">
         <a href="tel:+48501750410"><span class="ik"><svg aria-hidden="true"><use href="#tel"/></svg></span><span><small>Telefon</small><b>501 750 410</b></span></a>
         <a href="mailto:joannabrzezinska.dietetyk@gmail.com"><span class="ik"><svg aria-hidden="true"><use href="#mail"/></svg></span><span><small>E-mail</small><b>joannabrzezinska.dietetyk@gmail.com</b></span></a>
-        <div class="adr"><span class="ik"><svg aria-hidden="true"><use href="#pin"/></svg></span><span><small>Poradnia Terapeutyczno-Edukacyjna TerKin</small><b>os. Słoneczna 4, Wołomin</b><small>niedaleko stacji PKP Wołomin Słoneczna</small></span></div>
+        <div class="adr"><span class="ik"><svg aria-hidden="true"><use href="#pin"/></svg></span><span><small>Poradnia Przestrzeń Dobrostanu</small><b>os. Słoneczna 4, Wołomin</b><small>niedaleko stacji PKP Wołomin Słoneczna</small></span></div>
       </div>
       <div class="akcje">
         <a class="btn" href="https://booksy.com/pl-pl/280791_joanna-brzezinska-psychodietetyk_zdrowie_4277_wolomin" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#kal"/></svg>Zarezerwuj przez Booksy</a>
@@ -548,7 +646,7 @@ p{margin:0}
         <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
         <label>Temat
           <select name="temat">
-            <option>Konsultacja w poradni</option><option>Konsultacja online</option><option>Badania</option><option>Access Bars, moksoterapia, bańki</option><option>Inne pytanie</option>
+            <option>Konsultacja w poradni</option><option>Konsultacja online</option><option>Diagnostyka</option><option>Terapie: Kobido, masaż, moksoterapia, bańki, Access Bars</option><option>Inne pytanie</option>
           </select>
         </label>
         <label>Wiadomość<textarea name="tresc" placeholder="Z czym chcesz przyjść, jakie masz pytania"></textarea></label>
@@ -570,14 +668,14 @@ p{margin:0}
     </div>
     <div>
       <h4>Strona</h4>
-      <ul><li><a href="#konsultacje">Konsultacje</a></li><li><a href="#badania">Badania</a></li><li><a href="#terapie">Terapie</a></li><li><a href="#o-mnie">O mnie</a></li></ul>
+      <ul><li><a href="#konsultacje">Konsultacje</a></li><li><a href="#terapie">Terapie</a></li><li><a href="#zespol">Zespół</a></li><li><a href="#blog">Blog</a></li></ul>
     </div>
     <div>
       <h4>Obserwuj</h4>
       <ul><li><a href="https://www.instagram.com/z_uwaznoscia_ku_zdrowiu/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/joanna.brzezinska.zuwaznosciakuzdrowiu" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://booksy.com/pl-pl/280791_joanna-brzezinska-psychodietetyk_zdrowie_4277_wolomin" target="_blank" rel="noopener">Booksy</a></li></ul>
     </div>
     <div class="dol">
-      <span>&copy; <span id="rok">2026</span> Joanna Brzezińska - psychodietetyk, fitoterapeuta, dietetyk TCM</span>
+      <span>&copy; <span id="rok">2026</span> Joanna Brzezińska - mistrz naturopatii, zielarka, dietetyk TCM</span>
       <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=joannabrzezinska.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
     </div>
   </div>
@@ -610,7 +708,7 @@ var linki={};menu.querySelectorAll('a[href^="#"]:not(.btn)').forEach(function(a)
 var mapa=d.getElementById('mapa');
 if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){var id=e.target.id,a=linki[id];if(id==='kontakt'){kontaktWidoczny=e.isIntersecting;sc()}if(!a)return;if(e.isIntersecting){for(var k in linki)linki[k].classList.remove('on');a.classList.add('on')}})},{rootMargin:'-45% 0px -50% 0px'});
-  ['podejscie','konsultacje','badania','terapie','o-mnie','faq','kontakt'].forEach(function(id){io.observe(d.getElementById(id))});
+  ['podejscie','konsultacje','badania','terapie','o-mnie','zespol','blog','faq','kontakt'].forEach(function(id){io.observe(d.getElementById(id))});
   var mo=new IntersectionObserver(function(es){if(es[0].isIntersecting){wczytajMape();mo.disconnect()}},{rootMargin:'300px 0px'});mo.observe(mapa);
 }else{wczytajMape()}
 function wczytajMape(){if(mapa.querySelector('iframe'))return;var f=d.createElement('iframe');f.src=mapa.getAttribute('data-src');f.title='Mapa dojazdu: os. Słoneczna 4, Wołomin';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mapa.appendChild(f)}
